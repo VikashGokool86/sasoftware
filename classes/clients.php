@@ -457,7 +457,7 @@ class clients
             // fetchs all the skills assigned to the client
             $return[$clientID]['Skills'] = $this->fetchAllSkillsForClient($clientID);
         }
-        return $return;
+        return $return ?? array();
     }
 
     public function fetchAllSkillsForDropDown(){
